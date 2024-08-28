@@ -1,0 +1,17 @@
+{
+  "name": "ttf-compresser",
+  "version": "1.0.0",
+  "description": "A small node js project used to transform ttf file to small size",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "mrzousheng@hotmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "fontmin": "^1.1.0",
+    "fs": "^0.0.1-security"
+  }
+}
