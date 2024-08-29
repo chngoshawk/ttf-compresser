@@ -13,7 +13,7 @@ try {
     const fonts = fontFileDir.filter((fd) => {
         let fileType = fd.split('.')
         fileType = fileType[fileType.length - 1]
-        return fileType == 'ttf'
+        return fileType.toLowerCase() == 'ttf'
     })
     if (fonts.length < 1) throw 'no available .ttf file'
 
@@ -31,7 +31,7 @@ try {
             throw err
         } else {
             console.log(
-                'transform completed'
+                'transform completed, new File has been generated in /output'
             )
         }
     })
